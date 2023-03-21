@@ -61,7 +61,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body(page);
     }
 
-    @GetMapping("/product/{productId}")
+    @GetMapping("/products/{productId}")
     public ResponseEntity<Product> getProduct(@PathVariable Integer productId) {
         Product product = productService.getProductById(productId);
 
